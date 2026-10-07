@@ -1,18 +1,124 @@
-<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#8b5cf6"><title>Tesla & Magnetismo | Motor Inducao</title><link rel="stylesheet" href="style.css"></head><body><header class="topbar"><nav class="nav container">
-  <a class="brand" href="index.html"><span class="brand-mark"></span><span>Tesla & Magnetismo</span></a>
-  <div class="nav-links">
-    <a href="index.html">Início</a>
-    <a href="campo-magnetico.html">Campo girante</a>
-    <a href="motor-inducao.html">Motor</a>
-    <a href="corrente-alternada.html">CA</a>
-    <a href="bobina-tesla.html">Bobina</a>
-    <a href="transmissao.html">Sem fios</a>
-    <a href="cientistas.html">Cientistas</a>
-    <a href="conceitos.html">Conceitos</a>
-    <a href="impactos.html">Impactos</a>
-    <a href="linha-do-tempo.html">Linha do tempo</a>
-  </div>
-</nav>
-<div class="progress"></div></header><section class="page-hero"><div class="container"><div class="breadcrumbs"><a href="index.html">Início</a> / Tópico 02</div><div class="page-title"><div class="reveal"><div class="eyebrow">Tópico 02</div><h1>Motor de indução</h1><p class="lead">O campo gira de um lado. O rotor responde do outro. A interação eletromagnética transforma eletricidade em movimento.</p></div><div class="hero-photo reveal"><img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Tesla%27s_induction_motor.jpg" alt="Modelo de motor de indução de Tesla"><div class="caption">Imagem histórica • Wikimedia Commons</div></div></div></div></section><main><section class="section"><div class="container lesson"><div class="text-panel reveal"><div class="eyebrow">Anatomia do motor</div><h2>Estator + rotor = movimento</h2><p><strong>Estator:</strong> parte fixa, com bobinas. <strong>Rotor:</strong> parte móvel. O campo magnético girante do estator induz correntes no rotor. A interação dessas correntes com o campo gera <strong>torque</strong>.</p><div class="callout"><strong>Em uma frase:</strong> o campo magnético não precisa “empurrar” diretamente uma bateria dentro do rotor. Ele induz correntes nele.</div></div><div class="visual reveal"><div class="rotor-scene"><div class="coil-arm a"></div><div class="coil-arm b"></div><div class="coil-arm c"></div><div class="rotor"><div class="rotor-core"></div></div></div></div></div></section>
-<section class="section alt"><div class="container"><div class="section-head"><h2>O caminho da energia</h2><p>Uma sequência visual para explicar na sala.</p></div><div class="chain reveal"><div class="node"><b>Energia elétrica</b><br><span>corrente nas bobinas</span></div><div class="node"><b>Campo girante</b><br><span>estator</span></div><div class="node"><b>Indução</b><br><span>correntes no rotor</span></div><div class="node"><b>Torque</b><br><span>movimento mecânico</span></div></div></div></section>
-<section class="section"><div class="container grid two"><article class="card reveal"><div class="num">Lei física</div><h3>Faraday-Lenz</h3><p>A variação do fluxo magnético induz uma força eletromotriz. No motor, isso ajuda a explicar as correntes induzidas no rotor.</p></article><article class="card reveal"><div class="num">Onde aparece?</div><h3>Do ventilador ao elevador</h3><p>O material-base cita ventiladores, bombas, máquinas industriais, compressores, elevadores e muitos outros equipamentos.</p></article></div></section></main><footer class="footer"><div class="container footer-grid"><div><strong>Tesla & Magnetismo</strong><p>Um site didático inspirado no esquema de estudo fornecido para a apresentação de Física.</p></div><div class="credits"><strong>Imagens históricas</strong><p>Retratos e registros técnicos: Wikimedia Commons. <a href="https://commons.wikimedia.org/wiki/File:Nikola_Tesla_around_1890.jpg" target="_blank" rel="noopener">Tesla, c. 1890</a> · <a href="https://commons.wikimedia.org/wiki/File:Tesla%27s_induction_motor.jpg" target="_blank" rel="noopener">motor de indução</a> · <a href="https://commons.wikimedia.org/wiki/File:Tesla_lab_coil1.jpg" target="_blank" rel="noopener">bobina</a> · <a href="https://commons.wikimedia.org/wiki/File:Wardenclyffe_Tower.jpg" target="_blank" rel="noopener">Wardenclyffe</a>.</p></div></div></footer><script src="script.js"></script></body></html>
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#8b5cf6">
+  <title>Tesla & Magnetismo | Motor Inducao</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="topbar">
+    <nav class="nav container">
+      <a class="brand" href="index.html"><span class="brand-mark"></span><span>Tesla & Magnetismo</span></a>
+      <div class="nav-links">
+        <a href="index.html">Início</a>
+        <a href="campo-magnetico.html">Campo girante</a>
+        <a href="motor-inducao.html">Motor</a>
+        <a href="corrente-alternada.html">CA</a>
+        <a href="bobina-tesla.html">Bobina</a>
+        <a href="transmissao.html">Sem fios</a>
+        <a href="cientistas.html">Cientistas</a>
+        <a href="conceitos.html">Conceitos</a>
+        <a href="impactos.html">Impactos</a>
+        <a href="linha-do-tempo.html">Linha do tempo</a>
+      </div>
+    </nav>
+    <div class="progress"></div>
+  </header>
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumbs"><a href="index.html">Início</a> / Tópico 02</div>
+      <div class="page-title">
+        <div class="reveal">
+          <div class="eyebrow">Tópico 02</div>
+          <h1>Motor de indução</h1>
+          <p class="lead">O campo gira de um lado. O rotor responde do outro. A interação eletromagnética transforma
+            eletricidade em movimento.</p>
+        </div>
+        <div class="hero-photo reveal"><img
+            src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Tesla%27s_induction_motor.jpg"
+            alt="Modelo de motor de indução de Tesla">
+          <div class="caption">Imagem histórica • Wikimedia Commons</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <main>
+    <section class="section">
+      <div class="container lesson">
+        <div class="text-panel reveal">
+          <div class="eyebrow">Anatomia do motor</div>
+          <h2>Estator + rotor = movimento</h2>
+          <p><strong>Estator:</strong> parte fixa, com bobinas. <strong>Rotor:</strong> parte móvel. O campo magnético
+            girante do estator induz correntes no rotor. A interação dessas correntes com o campo gera
+            <strong>torque</strong>.</p>
+          <div class="callout"><strong>Em uma frase:</strong> o campo magnético não precisa “empurrar” diretamente uma
+            bateria dentro do rotor. Ele induz correntes nele.</div>
+        </div>
+        <div class="visual reveal">
+          <div class="rotor-scene">
+            <div class="coil-arm a"></div>
+            <div class="coil-arm b"></div>
+            <div class="coil-arm c"></div>
+            <div class="rotor">
+              <div class="rotor-core"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>O caminho da energia</h2>
+          <p>Uma sequência visual para explicar na sala.</p>
+        </div>
+        <div class="chain reveal">
+          <div class="node"><b>Energia elétrica</b><br><span>corrente nas bobinas</span></div>
+          <div class="node"><b>Campo girante</b><br><span>estator</span></div>
+          <div class="node"><b>Indução</b><br><span>correntes no rotor</span></div>
+          <div class="node"><b>Torque</b><br><span>movimento mecânico</span></div>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container grid two">
+        <article class="card reveal">
+          <div class="num">Lei física</div>
+          <h3>Faraday-Lenz</h3>
+          <p>A variação do fluxo magnético induz uma força eletromotriz. No motor, isso ajuda a explicar as correntes
+            induzidas no rotor.</p>
+        </article>
+        <article class="card reveal">
+          <div class="num">Onde aparece?</div>
+          <h3>Do ventilador ao elevador</h3>
+          <p>O material-base cita ventiladores, bombas, máquinas industriais, compressores, elevadores e muitos outros
+            equipamentos.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div><strong>Tesla & Magnetismo</strong>
+        <p>Um site didático inspirado no esquema de estudo fornecido para a apresentação de Física.</p>
+      </div>
+      <div class="credits"><strong>Imagens históricas</strong>
+        <p>Retratos e registros técnicos: Wikimedia Commons. <a
+            href="https://commons.wikimedia.org/wiki/File:Nikola_Tesla_around_1890.jpg" target="_blank"
+            rel="noopener">Tesla, c. 1890</a> · <a
+            href="https://commons.wikimedia.org/wiki/File:Tesla%27s_induction_motor.jpg" target="_blank"
+            rel="noopener">motor de indução</a> · <a href="https://commons.wikimedia.org/wiki/File:Tesla_lab_coil1.jpg"
+            target="_blank" rel="noopener">bobina</a> · <a
+            href="https://commons.wikimedia.org/wiki/File:Wardenclyffe_Tower.jpg" target="_blank"
+            rel="noopener">Wardenclyffe</a>.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
